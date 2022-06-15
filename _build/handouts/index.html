@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Practical Python Project | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Practical Python Project</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Practical Python Project</a><ul>
+<li><a class="reference internal" href="#intro">Intro</a></li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#part-1-course-demos">Part 1: Course Demos</a></li>
+<li><a class="reference internal" href="#part-2-guessing-game">Part 2: Guessing Game</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="practical-python-project">
+<h1>Practical Python Project</h1>
+<section class="section" id="intro">
+<h2>Intro</h2>
+<p>This project is tied to the course entitled “Practical Python for Beginners” on Pluralsight.
+You can view the course here:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://app.pluralsight.com/library/courses/practical-python-beginners/table-of-contents</span></code></p>
+<p>The purpose of the exercise is to make sure that you have been able to be hands-on with the
+course content, and also to build upon the course content to create a new program.</p>
+</section>
+<section class="section" id="setup">
+<h2>Setup</h2>
+<p>Create a new Github repository called <cite>practical-python</cite> and get set up to be able to
+commit code locally on your machine to the repository.</p>
+</section>
+<section class="section" id="part-1-course-demos">
+<h2>Part 1: Course Demos</h2>
+<p>Ensure you have replicated all demos contained in the Practical Python course on Pluralsight.
+For each demo, create a new file with a name that makes it clear which demo the file pertains
+to. Make sure you have code for each of the following demos:</p>
+<ul class="simple">
+<li><p>Create a Tax Calculator Script</p></li>
+<li><p>Strings, Input, and Output</p></li>
+<li><p>Create an Age Calculator</p></li>
+<li><p>Rock Paper Scissors Game</p></li>
+<li><p>Sum Expenses</p></li>
+<li><p>Loan Payment Calculator</p></li>
+<li><p>Create a Movie Schedule Dictionary</p></li>
+<li><p>Parse a Nested Contracts Dictionary</p></li>
+<li><p>Use the Open Weather Map API</p></li>
+<li><p>Create a Dice Rolling Game</p></li>
+<li><p>Add Functions to Weather.py</p></li>
+</ul>
+<p>You do NOT need files for the following demos:</p>
+<ul class="simple">
+<li><p>Install Python</p></li>
+<li><p>Create a Python Virtual Environment</p></li>
+</ul>
+<p><strong>When you are finished, add, commit, and push all demo files to your Github repo.</strong></p>
+</section>
+<section class="section" id="part-2-guessing-game">
+<h2>Part 2: Guessing Game</h2>
+<p>Create a new file called <cite>game.py</cite>. In it, write a Python program that
+that allows the user to
+play the classic number guessing game. The game will work like this:</p>
+<ul class="simple">
+<li><p>The computer will choose a random number between 1–100 and ask the user to
+guess the number</p></li>
+<li><p>Once the user guesses, the computer will tell the user if their guess was too
+high or too low</p></li>
+<li><p>The game is over once the user guesses the computer’s number. When the game is
+over, the computer the total number of guesses the user made before getting
+the right answer.</p></li>
+</ul>
+<p>Here’s the terminal output for an example game:</p>
+<pre class="console literal-block">$ <span class="cmd">python3 game.py</span>
+Howdy, what's your name?
+(type in your name) <span class="cmd">Jessica</span>
+Jessica, I'm thinking of a number between 1 and 100.
+Try to guess my number.
+Your guess? <span class="cmd">50</span>
+Your guess is too low, try again.
+Your guess? <span class="cmd">80</span>
+Your guess is too high, try again.
+Your guess? <span class="cmd">60</span>
+Your guess is too low, try again.
+Your guess? <span class="cmd">70</span>
+Your guess is too high, try again.
+Your guess? <span class="cmd">63</span>
+Your guess is too low, try again.
+Your guess? <span class="cmd">64</span>
+Your guess is too low, try again.
+Your guess? <span class="cmd">67</span>
+Your guess is too low, try again.
+Your guess? <span class="cmd">69</span>
+Your guess is too high, try again.
+Your guess? <span class="cmd">68</span>
+Well done, Jessica! You found my number in 9 tries!</pre>
+<p>Here’s a rough pseudocode outline of the program that gave this output:</p>
+<pre class="literal-block">greet player
+get player name
+choose random number between 1 and 100
+<em>repeat forever:</em>
+    get guess
+    if guess is incorrect:
+        give hint
+        increase number of guesses
+    else:
+        congratulate player</pre>
+<p><strong>When you are finished, add, commit, and push your game to your Github repo.</strong></p>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2022 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
