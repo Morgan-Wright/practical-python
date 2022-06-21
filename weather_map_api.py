@@ -3,9 +3,8 @@ import requests
 
 def get_weather_temp():
     api_key = "c69ab9c9561b2cbf754c801a93c2929a"
-    city = "Orlando"
-    url = "http://api.openweathermap.org/data/2.5/weather?q=" + \
-        city+"&appid="+api_key+"&units=imperial"
+    city = "Philadelphia"
+    url = "http://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API}&units=imperial".format(city_name = city, API = api_key)
 
     request = requests.get(url)
     json = request.json()
@@ -18,7 +17,10 @@ def get_weather_temp():
             'max_temp': max_temp
             }
 
-weather_dict = get_weather_temp()
-print(weather_dict.get('description'))
-print(weather_dict.get('min_temp'))
-print(weather_dict.get('max_temp'))
+def main():
+    weather_dict = get_weather_temp()
+    print(weather_dict.get('description'))
+    print(weather_dict.get('min_temp'))
+    print(weather_dict.get('max_temp'))
+
+main()
