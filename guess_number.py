@@ -5,7 +5,7 @@ name = input('What is the player name?\n')
 number = str(random.randint(1, 100))
 
 def guess_function(guess):
-    num_of_guess = 0
+    num_of_guess = 1
     
     for guess in number:
         num_of_guess += 1
